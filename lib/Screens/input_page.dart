@@ -248,7 +248,9 @@ class RoundedIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      child: Icon(icon),
+      child: Icon(
+        icon,
+      ),
       onPressed: onPressed,
       elevation: 0.0,
       shape: CircleBorder(),
