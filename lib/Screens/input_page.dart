@@ -87,7 +87,9 @@ class _InputPageState extends State<InputPage> {
                   Center(
                     child: Text(
                       'HEIGHT',
-                      style: TextStyle(fontSize: 18.0),
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
                     ),
                   ),
                   Row(
