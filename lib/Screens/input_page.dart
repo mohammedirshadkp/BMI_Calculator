@@ -94,7 +94,9 @@ class _InputPageState extends State<InputPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(height.toString(), style: KTextStyle),
-                      Text('cm')
+                      Text(
+                        'cm',
+                      )
                     ],
                   ),
                   SliderTheme(
