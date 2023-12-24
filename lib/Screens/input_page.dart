@@ -84,7 +84,7 @@ class _InputPageState extends State<InputPage> {
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 textBaseline: TextBaseline.alphabetic,
                 children: [
-                  Center(
+                  const Center(
                     child: Text(
                       'HEIGHT',
                       style: TextStyle(fontSize: 18.0),
@@ -98,7 +98,7 @@ class _InputPageState extends State<InputPage> {
                     ],
                   ),
                   SliderTheme(
-                    data: SliderThemeData(
+                    data: const SliderThemeData(
                       activeTrackColor: Colors.white,
                       inactiveTrackColor: Color(0xFF8E8D98),
                       thumbColor: Color(0xFFEB1555),
