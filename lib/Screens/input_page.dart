@@ -53,7 +53,7 @@ class _InputPageState extends State<InputPage> {
                       colour: maleCardColour = selectedGender == Gender.male
                           ? activeCardColour
                           : inactiveCardColour,
-                      cardChild: IconColumn(FontAwesomeIcons.mars, 'MALE'),
+                      cardChild: const IconColumn(FontAwesomeIcons.mars, 'MALE'),
                     ),
                   ),
                 ),
