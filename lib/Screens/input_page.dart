@@ -53,7 +53,8 @@ class _InputPageState extends State<InputPage> {
                       colour: maleCardColour = selectedGender == Gender.male
                           ? activeCardColour
                           : inactiveCardColour,
-                      cardChild: const IconColumn(FontAwesomeIcons.mars, 'MALE'),
+                      cardChild:
+                          const IconColumn(FontAwesomeIcons.mars, 'MALE'),
                     ),
                   ),
                 ),
@@ -243,7 +244,7 @@ class _InputPageState extends State<InputPage> {
 }
 
 class RoundedIconButton extends StatelessWidget {
-  RoundedIconButton({required this.icon, required this.onPressed});
+  RoundedIconButton({super.key, required this.icon, required this.onPressed});
   final IconData icon;
   final VoidCallback onPressed;
 
