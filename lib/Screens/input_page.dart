@@ -78,53 +78,50 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            child: ReusableCard(
-              colour: activeCardColour,
-              cardChild: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.baseline,
-                textBaseline: TextBaseline.alphabetic,
-                children: [
-                  const Center(
-                    child: Text(
-                      'HEIGHT',
-                      style: TextStyle(fontSize: 18.0),
-                    ),
+              child: ReusableCard(
+            colour: activeCardColour,
+            cardChild: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.baseline,
+              textBaseline: TextBaseline.alphabetic,
+              children: [
+                const Center(
+                  child: Text(
+                    'HEIGHT',
+                    style: TextStyle(fontSize: 18.0),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(height.toString(), style: KTextStyle),
-                      Text(
-                        'cm',
-                      )
-                    ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(height.toString(), style: KTextStyle),
+                    Text(
+                      'cm',
+                    )
+                  ],
+                ),
+                SliderTheme(
+                  data: const SliderThemeData(
+                    activeTrackColor: Colors.white,
+                    inactiveTrackColor: Color(0xFF8E8D98),
+                    thumbColor: Color(0xFFEB1555),
+                    thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15.0),
+                    overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
+                    overlayColor: Color(0x29EB1555),
                   ),
-                  SliderTheme(
-                    data: const SliderThemeData(
-                      activeTrackColor: Colors.white,
-                      inactiveTrackColor: Color(0xFF8E8D98),
-                      thumbColor: Color(0xFFEB1555),
-                      thumbShape:
-                          RoundSliderThumbShape(enabledThumbRadius: 15.0),
-                      overlayShape:
-                          RoundSliderOverlayShape(overlayRadius: 30.0),
-                      overlayColor: Color(0x29EB1555),
-                    ),
-                    child: Slider(
-                        min: 120.0,
-                        max: 220.0,
-                        value: height.toDouble(),
-                        onChanged: (newHeight) {
-                          setState(() {
-                            height = newHeight.round();
-                          });
-                        }),
-                  ),
-                ],
-              ),
+                  child: Slider(
+                      min: 120.0,
+                      max: 220.0,
+                      value: height.toDouble(),
+                      onChanged: (newHeight) {
+                        setState(() {
+                          height = newHeight.round();
+                        });
+                      }),
+                ),
+              ],
             ),
-          ),
+          )),
           Expanded(
             child: Row(
               children: [
