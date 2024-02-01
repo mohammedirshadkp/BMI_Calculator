@@ -156,7 +156,7 @@ class _InputPageState extends State<InputPage> {
                                 });
                               },
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10.0,
                             ),
                             RoundedIconButton(
