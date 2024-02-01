@@ -94,7 +94,7 @@ class _InputPageState extends State<InputPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(height.toString(), style: KTextStyle),
-                    Text(
+                    const Text(
                       'cm',
                     )
                   ],
