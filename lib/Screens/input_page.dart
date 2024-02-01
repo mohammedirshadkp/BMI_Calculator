@@ -20,7 +20,6 @@ enum Gender { male, female, none }
 
 class InputPage extends StatefulWidget {
   const InputPage({Key? key}) : super(key: key);
-
   @override
   State<InputPage> createState() => _InputPageState();
 }
@@ -143,7 +142,7 @@ class _InputPageState extends State<InputPage> {
                               weight.toString(),
                               style: KTextStyle,
                             ),
-                            Text('KG'),
+                            const Text('KG'),
                           ],
                         ),
                         Row(
