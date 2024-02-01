@@ -86,7 +86,7 @@ class _InputPageState extends State<InputPage> {
               children: [
                 const Center(
                   child: Text(
-                    'HEIGHT',
+                    'HEGHT',
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
